@@ -6,7 +6,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("👋 Привет! Пришли ссылку на TikTok или YouTube Shorts — я скачаю видео без водяных знаков!")
+    await update.message.reply_text("👋 Привет! Пришли ссылку на TikTok или YouTube Shorts")
 
 async def download_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text
